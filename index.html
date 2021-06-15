@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Pizzaria da Nona</title>
+    <meta charset="utf-8">
+  </head>
+  <style>
+      body{
+          background-image:url(pizza.jpeg);
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+  </style>
+  <body>
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "8e52288d-0eec-4f54-8cf7-38c4d7fc5ee1", // The ID of this integration.
+            region: "us-south", // The region your integration is hosted in.
+            serviceInstanceID: "bfea5e86-946b-4e3b-b210-5fc40b4b4628", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+          document.head.appendChild(t);
+        });
+      </script>  
+  </body>
+</html>
